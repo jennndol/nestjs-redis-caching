@@ -1,0 +1,9 @@
+version: '3.5'
+services: 
+    redis:
+        image: redis:alpine
+        command: redis-server
+        environment:
+            - ALLOW_EMPTY_PASSWORD=yes
+        ports: 
+            - 6379:6379
